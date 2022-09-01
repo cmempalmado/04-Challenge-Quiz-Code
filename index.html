@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Coding Quiz!</title>
+    <link rel="stylesheet" href="./style.css" />
+    
+  </head>
+
+
+    <header>
+      <div class="words" id="words">
+        <div class="timer">Time: <span id="time">0</span></div>
+          <h1>Christian's Coding Quiz Challenge</h1>
+          <p>
+          Try to Choice the following code-related questions within 1 minute (60 Seconds). Keep in mind that incorrect Choices will penalize your
+          score/time by ten seconds. Good Luck! Have Fun!
+          </p>
+          <p>Multiple Choice: Click on the correct Answer</p>
+
+      </div>
+      <div id="score" class="score">Your Score will be your remaining time.</div>
+      <div id="feedback" class="feedback hide"></div>
+    </header>
+  
+  <body>
+    <div> <button class="scores"><a href="highscores.html">View Highscores</a></button>
+      </div>
+    <div class="container" id="container">
+      
+      <div id="question-container" class="hide">
+        
+
+        
+        <div id="questions">Question</div>
+        <div id="choice-btns" class="btn-grid">
+          <button class="btn" id="answer-btn"><strong>Choice1</strong></button>
+          <button class="btn" id="answer-btn"><strong>Choice2</strong></button>
+          <button class="btn" id="answer-btn"><strong>Choice3</strong></button>
+          <button class="btn" id="answer-btn"><strong>Choice4</strong></button>
+        </div>
+      </div>
+      <div class="controls"></div>
+        <button id="start-btn" class="start-btn btn">Start Quiz</button>
+        <button id="next-btn" class="next-btn btn hide">Next</button>
+        <!-- <button id="score-btn" class="score-btn btn hide">Next</button> -->
+
+        
+    </div>
+
+    <div id="scores" class="scores hide">
+      <h2>All done!</h2>
+      <p>Your final score is <span id="final-score"></span>.</p>
+      <p>
+        Enter initials: <input type="text" id="initials" max="3" />
+        <button id="submit">Submit</button>
+      </p>
+    </div>
+
+    <div class="wrapper hide" id="wrapper">
+      <h1>Highscores</h1>
+      <ol id="highscores"></ol>
+
+      <button id="return">Go Back</button></a>
+      <button id="clear">Clear Highscores</button>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+   
+  </body>
+</html>

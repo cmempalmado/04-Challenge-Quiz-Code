@@ -1,0 +1,96 @@
+*,*::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+  margin: 50px;
+  padding: 50px;
+  color: rgb(255, 255, 255);
+  display: top;
+  justify-content: top;
+  align-items: top;
+  width: 80vw;
+  height: 80vh;
+  
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  height: 100vh;
+  align-items: center;
+  background-color: rgb(11, 7, 48);
+}
+
+.container {
+  width: 800;
+  max-width: 80%;
+  background-color: rgb(180, 192, 4);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  margin: 80px 0;
+  gap: 15px;
+}
+
+.btn {
+  background-color: rgb(197, 197, 197);
+  border-radius: 10px;
+  padding: 10px 16px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border-color: aliceblue;
+}
+
+.btn.correct {
+  color: rgb(74, 139, 74);
+}
+
+.btn.wrong {
+  color: rgb(128, 41, 41);
+}
+
+.start-btn, .next-btn {
+  font-size: 2.0rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+#scores, .wrapper {
+  padding-left: 5px;
+  color: white;
+  margin: 50px;
+  padding: 50px;
+  display: top;
+  justify-content: top;
+  align-items: top;
+  width: 80vw;
+  height: 80vh;
+}
+
+.scores {
+  color: white;
+}
+
+
